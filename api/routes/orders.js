@@ -7,7 +7,7 @@ const checkAuth = require('../middleware/check-auth');
 
 
 router.get('/', checkAuth, ordersControllers.ordersGetAll);
-
+     
 router.post('/', checkAuth, ordersControllers.orderCreate);
 
 

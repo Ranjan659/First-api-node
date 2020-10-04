@@ -65,7 +65,7 @@ exports.productPost = (req,res,next)=>{
 
 exports.productGetOne = (req,res,next)=>{
     const id = req.params.productId;
-   Product.findById(id)
+    Product.findById(id)
    .select('name price _id productImage')
     .exec()
     .then(doc=>{
